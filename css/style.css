@@ -1,0 +1,69 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Caveat", cursive, sans-serif, arial;
+  display: flex;
+  background-image: linear-gradient(270deg, #000 50%, rgb(50 50 50) 50%);
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+h1 {
+  top: 10px;
+  margin: 5rem 0 14rem 0;
+}
+
+span {
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0px 15px rgb(0, 225, 255);
+}
+.button-container {
+  border: 2px solid rgb(4, 204, 204);
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: inset 0px 20px 20px -17px #a9a;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 120px;
+  height: 75px;
+  font-family: inherit;
+  font-size: 25px;
+  color: wheat;
+  text-shadow: 0 2px 4px rgb(0, 225, 255);
+  background: linear-gradient(to top, rgb(50 50 50) 35%, #000 75%);
+  border-radius: 7px;
+  box-shadow: inset 0px 20px 9px -20px #a9a;
+}
+button:hover {
+  background: linear-gradient(to bottom, rgb(50 50 50) 35%, #000 75%);
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: inset 20px 20px 20px -20px rgb(0, 225, 255);
+}
+
+/* Media Query : Tablet or Smaller */
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+}
