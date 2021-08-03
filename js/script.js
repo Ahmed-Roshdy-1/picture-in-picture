@@ -1,4 +1,5 @@
 const videoElement = document.getElementById("video");
+const button1 = document.getElementById("button1");
 const button = document.getElementById("button");
 
 async function selectMediaStream() {
@@ -20,6 +21,9 @@ button.addEventListener("click", async () => {
   await videoElement.requestPictureInPicture();
   // Reset Button
   button.disabled = false;
+});
+button1.addEventListener("click", () => {
+  window.location.reload(false);
 });
 // on Load
 selectMediaStream();
