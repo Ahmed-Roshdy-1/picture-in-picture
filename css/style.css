@@ -32,6 +32,7 @@ span {
 
 button {
   cursor: pointer;
+  margin: 10px;
   outline: none;
   width: 120px;
   height: 75px;
